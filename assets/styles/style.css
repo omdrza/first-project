@@ -1,0 +1,422 @@
+/* General Styles */
+:root {
+    --color-blue: #E7FAFE;
+}
+
+@font-face {
+    font-family: r-yekan;
+    src: url(../fonts/iranyekanwebregular.eot) format('eot'),
+        url(../fonts/iranyekanwebregular.ttf) format('ttf'),
+        url(../fonts/iranyekanwebregular.woff) format('woff'), ;
+}
+
+@font-face {
+    font-family: b-yekan;
+    src: url(../fonts/iranyekanwebbold.eot) format('eot'),
+        url(../fonts/iranyekanwebbold.ttf) format('ttf'),
+        url(../fonts/iranyekanwebbold.woff) format('woff'), ;
+}
+
+body {
+    direction: rtl;
+    font-family: r-yekan !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: b-yekan;
+    font-weight: bold;
+}
+
+/* Start Header */
+#header .navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+}
+
+#header .nav-item .nav-link:hover,
+#header .nav-item .nav-link:active {
+    color: #282929;
+}
+
+#header .header-content .like-image {
+    left: -40px;
+    top: -20px;
+}
+
+#header .header-content .header-text {
+    background: url(../images/bg-text-header.jpg);
+
+}
+
+#header .header-content .badge.recipes {
+    width: 200px;
+    font-size: 12px;
+}
+
+#header .header-content .icon-resturanet {
+    background-color: #caecf5 !important;
+    font-size: 15px;
+}
+
+#header .header-content .icon-resturanet:hover {
+    background-color: #bbeaf7 !important;
+}
+
+#header .header-content .play-icon {
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+
+}
+
+#header .header-content .play-icon::before {
+    margin-left: 2px;
+}
+
+/* Start Categories  */
+#categories {
+    margin-top: 100px;
+}
+
+#categories .btn-all-categorie {
+    background-color: var(--color-blue);
+}
+
+#categories .btn-all-categorie:hover {
+    background-color: #caecf5 !important;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#categories .categorie:hover .categorie-link {
+    color: #000000a6 !important;
+}
+
+#categories .vegan-categorie {
+    width: 100px;
+    height: 100px;
+}
+
+/* Start cards */
+#cards {
+    margin-top: 100px;
+}
+
+#cards .header-cards {
+    margin-bottom: 80px;
+}
+
+#cards .card {
+    border: none;
+    background-color: var(--color-blue);
+}
+
+#cards .like-badge .icon-like {
+    width: 45px;
+    height: 45px;
+    color: #DBE2E5;
+    font-size: 18px;
+    background-color: #fff;
+    right: 20px;
+    top: 15px;
+}
+
+#cards .like-badge .icon-like:active {
+    color: #FF6363;
+}
+
+#cards .card .card-title a:hover,
+#cards .card .card-title a:active {
+    color: #000000a6 !important;
+}
+
+/* start chef */
+#chef {
+    margin-top: 100px;
+}
+
+#chef .learn-more {
+    margin-top: 50px;
+    background-color: #000;
+}
+
+#chef .learn-more:hover {
+    background-color: rgb(19, 19, 19);
+
+}
+
+#chef .chef-meat {
+    width: 80px;
+    left: 80px;
+    top: 60px;
+}
+
+#chef .chef-tomato {
+    left: 30px;
+    bottom: 80px;
+}
+
+#chef .chef-vegan {
+    width: 80px;
+    right: -20px;
+    top: 140px;
+}
+
+#chef .chef-onion {
+    right: 100px;
+    top: 80px;
+}
+/* start posts insta */
+#instagram-posts{
+    margin-top: 100px;
+}
+#instagram-posts .btn-insta{
+    background-color: #000;
+}
+
+#instagram-posts .btn-insta:hover{
+    background-color: rgb(19, 19, 19);
+
+}
+/* start delicious recipes */
+#delicious-recipes{
+    margin-top: 150px;
+}
+#delicious-recipes .like-badge .icon-like {
+    width: 45px;
+    height: 45px;
+    color: #DBE2E5;
+    font-size: 18px;
+    background-color: #fff;
+    right: 20px;
+    top: 15px;
+}
+
+#delicious-recipes .like-badge .icon-like:active {
+    color: #FF6363;
+}
+#delicious-recipes .card{
+    border: none;
+}
+#delicious-recipes .card .card-title a:hover,
+#delicious-recipes .card .card-title a:active {
+    color: #000000a6 !important;
+}
+/* start subscribe */
+#subscribe{
+    background-color: var(--color-blue) !important;
+    margin-top: 100px;
+    /* height: 450px; */
+}
+#subscribe form{
+    background-color: #fff;
+    
+}
+#subscribe .email-sub{
+    outline: none;
+    width: 400px;
+    border: 1px solid #fff !important;    
+
+}
+#subscribe .email-sub:active,
+#subscribe .email-sub:focus{
+    border: 1px solid #ccc !important;    
+}
+#subscribe .btn-sub{
+    padding: 10px 0;
+}
+#subscribe .salad-subscribe{
+    width: 340px;
+}
+/* start footer */
+#footer{
+    margin-top: 100px;
+}
+#footer .footer-nav{
+    list-style: none;
+}
+#footer .nav-item .nav-link{
+    color: rgba(0, 0, 0, .65);
+}
+#footer .nav-item .nav-link:hover,
+#footer .nav-item .nav-link:active {
+    color: #282929;
+}
+#footer .copyright{
+    border-top: 1px solid #e5e5e5;
+}
+#footer ul li i,
+#footer .copyright-link{
+    font-size: 18px;
+    color: rgba(0, 0, 0, .65) !important;
+}
+#footer ul li i:hover,
+#footer ul li i:active,
+#footer .copyright-link:hover{
+    color: #222222 !important;
+}
+@media (max-width : 769px) {
+    #header .header-content {
+        text-align: center;
+    }
+
+    #header .header-content .like-image {
+        width: 100px;
+        top: -20px;
+        left: 0;
+    }
+
+    #header .header-content .btn-wacth {
+        width: 80%;
+        padding: 10px 10px !important;
+        margin-top: 20px;
+    }
+
+    #header .header-content .badges {
+        justify-content: center;
+    }
+
+    #header .header-content .shadow-header {
+        display: none;
+    }
+    #cards .card,
+    #delicious-recipes .content-delicious .card {
+        text-align: center;
+    }
+    #cards .card .name-item-card,
+    #delicious-recipes .card .name-item-delicious {
+        justify-content: center !important;
+    }
+    
+    #chef .chef-meat {
+        width: 50px;
+        left: 60px;
+        top: 50px;
+    }
+
+    #chef .chef-tomato {
+        left: 20px;
+        bottom: 60px;
+        width: 40px;
+    }
+
+    #chef .chef-vegan {
+        width: 60px;
+        right: 0px;
+        top: 120px;
+    }
+
+    #chef .chef-onion {
+        right: 70px;
+        top: 70px;
+        width: 40px;
+    }
+    #chef .chef-content{
+        text-align: center;
+    }
+    #chef .chef-content .learn-more{
+        width: 100% !important;
+    }
+    #delicious-recipes .header-delicious{
+        text-align: center;
+    }
+    #subscribe .salad-subscribe,
+    #subscribe .egg-subscribe{
+        width: 200px;
+    }
+    #subscribe .email-sub{
+        width: 100%;
+        margin-top: -50px
+    
+    }
+    #subscribe .btn-sub{
+        width: 100% !important;
+        margin: 5px auto !important;
+    }
+    #subscribe .form-sub{
+        display: block !important;
+    }
+    #footer{
+        text-align: center ;
+    }
+    #footer .footer-nav{
+        flex-direction: column;
+        text-align: center !important;
+        width: 100%;
+      
+    }
+    #footer .footer-nav li{
+        margin-bottom: 5px;
+        margin-right: 0 !important;
+    }
+    #footer .copyright-parent{
+        text-align: center !important ;
+    }
+    #footer .copyright .social-media{
+        justify-content: center !important;
+        padding: 0 !important;
+        margin-top: 10px;
+    }
+   
+
+}
+@media (min-width : 769px) and (max-width :1024px){
+    #header .header-content .like-image {
+        width: 100px;
+        top: -20px;
+        left: -20px;
+    }
+    #header .header-content .badges {
+        justify-content: center;
+    }
+    #chef .chef-meat {
+        width: 50px;
+        left: 60px;
+        top: 50px;
+    }
+
+    #chef .chef-tomato {
+        left: 20px;
+        bottom: 80px;
+        width: 40px;
+    }
+
+    #chef .chef-vegan {
+        width: 60px;
+
+    }
+
+    #chef .chef-onion {
+        right: 70px;
+        top: 70px;
+        width: 40px;
+    }
+    #delicious-recipes .header-delicious{
+        text-align: center;
+    }
+    #subscribe .form-sub{
+        display: block !important;
+    }
+    #footer{
+        text-align: center ;
+    }
+    #footer .footer-nav{
+        flex-direction: column;
+        text-align: center !important;
+        width: 100%;
+      
+    }
+    #footer .footer-nav li{
+        margin-bottom: 5px;
+        margin-right: 0 !important;
+    }
+    #footer .copyright-parent{
+        text-align: right !important ;
+    }
+    
+}
